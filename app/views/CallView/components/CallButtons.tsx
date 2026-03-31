@@ -2,6 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 import I18n from '../../../i18n';
+import { navigateToCallRoom } from '../../../lib/services/voip/navigateToCallRoom';
 import { useCallStore } from '../../../lib/services/voip/useCallStore';
 import CallActionButton from './CallActionButton';
 import { styles } from '../styles';
@@ -18,6 +19,8 @@ export const CallButtons = () => {
 	const isMuted = useCallStore(state => state.isMuted);
 	const isOnHold = useCallStore(state => state.isOnHold);
 	const isSpeakerOn = useCallStore(state => state.isSpeakerOn);
+	const roomId = useCallStore(state => state.roomId);
+	const contact = useCallStore(state => state.contact);
 
 	const toggleMute = useCallStore(state => state.toggleMute);
 	const toggleHold = useCallStore(state => state.toggleHold);
@@ -25,11 +28,10 @@ export const CallButtons = () => {
 	const endCall = useCallStore(state => state.endCall);
 
 	const isConnecting = callState === 'none' || callState === 'ringing' || callState === 'accepted';
+	const messageDisabled = Boolean(contact.sipExtension) || roomId == null;
 
 	const handleMessage = () => {
-		// TODO: Navigate to chat with caller
-		// Navigation.navigate('RoomView', { rid, t: 'd' });
-		alert('Message');
+		void navigateToCallRoom();
 	};
 
 	const handleDialpad = () => {
@@ -70,7 +72,13 @@ export const CallButtons = () => {
 			</View>
 
 			<View style={styles.buttonsRow}>
-				<CallActionButton icon='message' label={I18n.t('Message')} onPress={handleMessage} testID='call-view-message' />
+				<CallActionButton
+					icon='message'
+					label={I18n.t('Message')}
+					onPress={handleMessage}
+					disabled={messageDisabled}
+					testID='call-view-message'
+				/>
 				<CallActionButton
 					icon='phone-off'
 					label={isConnecting ? I18n.t('Cancel') : I18n.t('End')}
