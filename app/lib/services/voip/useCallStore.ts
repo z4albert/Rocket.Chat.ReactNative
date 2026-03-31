@@ -70,6 +70,9 @@ interface CallStoreState {
 	focused: boolean;
 	dialpadValue: string;
 
+	/** DM room id for the current call; cleared on `reset()`. */
+	roomId: string | null;
+
 	// Contact info
 	contact: CallContact;
 }
@@ -88,6 +91,7 @@ interface CallStoreActions {
 	/** Clears UI/call fields but keeps nativeAcceptedCallId. Restarts the 15s timer (media init calls reset and clears the old timer first). */
 	reset: () => void;
 	setDialpadValue: (value: string) => void;
+	setRoomId: (roomId: string | null) => void;
 }
 
 export type CallStore = CallStoreState & CallStoreActions;
@@ -105,7 +109,8 @@ const initialState: CallStoreState = {
 	callStartTime: null,
 	contact: {},
 	focused: true,
-	dialpadValue: ''
+	dialpadValue: '',
+	roomId: null
 };
 
 export const useCallStore = create<CallStore>((set, get) => ({
@@ -243,6 +248,10 @@ export const useCallStore = create<CallStore>((set, get) => ({
 		call.sendDTMF(value);
 		const newValue = get().dialpadValue + value;
 		set({ dialpadValue: newValue });
+	},
+
+	setRoomId: (roomId: string | null) => {
+		set({ roomId });
 	},
 
 	endCall: () => {
