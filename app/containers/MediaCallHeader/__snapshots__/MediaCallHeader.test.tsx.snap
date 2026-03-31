@@ -50,7 +50,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={13}
+        handlerTag={17}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -121,7 +121,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -233,27 +233,6 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
             </Text>
           </Text>
         </View>
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "backgroundColor": "transparent",
-                "fontFamily": "Inter",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-                "textAlign": "left",
-              },
-              {
-                "color": "#6C727A",
-              },
-            ]
-          }
-          testID="call-view-header-subtitle"
-        >
-          2244
-        </Text>
       </View>
     </View>
     <View
@@ -277,7 +256,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={14}
+        handlerTag={18}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -397,7 +376,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={15}
+        handlerTag={19}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -468,7 +447,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -580,27 +559,6 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
             </Text>
           </Text>
         </View>
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "backgroundColor": "transparent",
-                "fontFamily": "Inter",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-                "textAlign": "left",
-              },
-              {
-                "color": "#6C727A",
-              },
-            ]
-          }
-          testID="call-view-header-subtitle"
-        >
-          2244
-        </Text>
       </View>
     </View>
     <View
@@ -624,7 +582,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={16}
+        handlerTag={20}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -744,7 +702,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={17}
+        handlerTag={21}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -815,7 +773,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -967,7 +925,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={18}
+        handlerTag={22}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1087,7 +1045,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={19}
+        handlerTag={23}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1158,7 +1116,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -1270,27 +1228,6 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
             </Text>
           </Text>
         </View>
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "backgroundColor": "transparent",
-                "fontFamily": "Inter",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-                "textAlign": "left",
-              },
-              {
-                "color": "#6C727A",
-              },
-            ]
-          }
-          testID="call-view-header-subtitle"
-        >
-          2244
-        </Text>
       </View>
     </View>
     <View
@@ -1314,7 +1251,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={20}
+        handlerTag={24}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1454,7 +1391,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={21}
+        handlerTag={25}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1525,7 +1462,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -1656,7 +1593,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
           }
           testID="call-view-header-subtitle"
         >
-          2244 - On hold
+          On hold
         </Text>
       </View>
     </View>
@@ -1681,7 +1618,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={22}
+        handlerTag={26}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1801,7 +1738,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={23}
+        handlerTag={27}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
@@ -1872,7 +1809,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -2003,7 +1940,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
           }
           testID="call-view-header-subtitle"
         >
-          2244 - Muted
+          Muted
         </Text>
       </View>
     </View>
@@ -2028,7 +1965,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={24}
+        handlerTag={28}
         handlerType="NativeViewGestureHandler"
         hitSlop={
           {
