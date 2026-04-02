@@ -13,12 +13,6 @@ jest.mock('../../../containers/ActionSheet', () => ({
 
 jest.mock('react-native-callkeep', () => ({}));
 
-jest.mock('react-native-incall-manager', () => ({
-	start: jest.fn(),
-	stop: jest.fn(),
-	setForceSpeakerphoneOn: jest.fn()
-}));
-
 function createMockCall(callId: string): IClientMediaCall {
 	const listeners: Record<string, Set<(...args: unknown[]) => void>> = {};
 	const emitter = {
