@@ -94,7 +94,9 @@ class MediaSessionInstance {
 					useCallStore.getState().setCall(call);
 					Navigation.navigate('CallView');
 					if (useCallStore.getState().roomId == null) {
-						void this.resolveRoomIdFromContact(call.contact);
+						this.resolveRoomIdFromContact(call.contact).catch(error => {
+							console.error('[VoIP] Error resolving room id from contact (newCall):', error);
+						});
 					}
 				}
 
@@ -123,7 +125,9 @@ class MediaSessionInstance {
 			RNCallKeep.setCurrentCallActive(callId);
 			useCallStore.getState().setCall(mainCall);
 			Navigation.navigate('CallView');
-			void this.resolveRoomIdFromContact(mainCall.contact);
+			this.resolveRoomIdFromContact(mainCall.contact).catch(error => {
+				console.error('[VoIP] Error resolving room id from contact (answerCall):', error);
+			});
 		} else {
 			RNCallKeep.endCall(callId);
 			const st = useCallStore.getState();
@@ -168,7 +172,7 @@ class MediaSessionInstance {
 		if (contact.sipExtension) {
 			return;
 		}
-		const username = contact.username;
+		const { username } = contact;
 		if (!username) {
 			return;
 		}

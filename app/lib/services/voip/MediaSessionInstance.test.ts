@@ -1,5 +1,6 @@
 import type { IClientMediaCall } from '@rocket.chat/media-signaling';
 import { waitFor } from '@testing-library/react-native';
+
 import type { IDDPMessage } from '../../../definitions/IDDPMessage';
 import { getDMSubscriptionByUsername } from '../../database/services/Subscription';
 import { getUidDirectMessage } from '../../methods/helpers/helpers';
