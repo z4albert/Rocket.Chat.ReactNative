@@ -1,5 +1,6 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react-native';
+import { act, fireEvent, render } from '@testing-library/react-native';
+import { AccessibilityInfo } from 'react-native';
 import { Provider } from 'react-redux';
 
 import CallView from '.';
@@ -391,6 +392,32 @@ describe('CallView', () => {
 		);
 
 		expect(getByText('Unmute')).toBeTruthy();
+	});
+
+	it('should not call toggleControlsVisible when screen reader is enabled', () => {
+		jest.spyOn(AccessibilityInfo, 'isScreenReaderEnabled').mockResolvedValue(false);
+		let capturedListener: (enabled: boolean) => void = () => {};
+		jest.spyOn(AccessibilityInfo, 'addEventListener').mockImplementation((_event: string, cb: any) => {
+			capturedListener = cb;
+			return { remove: jest.fn() } as any;
+		});
+
+		setStoreState({ callState: 'active' });
+		const toggleControlsVisible = jest.fn();
+		useCallStore.setState({ toggleControlsVisible });
+
+		const { getByTestId } = render(
+			<Wrapper>
+				<CallView />
+			</Wrapper>
+		);
+
+		act(() => {
+			capturedListener(true);
+		});
+
+		fireEvent.press(getByTestId('caller-info-toggle'));
+		expect(toggleControlsVisible).not.toHaveBeenCalled();
 	});
 });
 
