@@ -9,6 +9,7 @@ import { useCallStore } from '../../lib/services/voip/useCallStore';
 import { mockedStore } from '../../reducers/mockedStore';
 import * as stories from './CallView.stories';
 import { generateSnapshots } from '../../../.rnstorybook/generateSnapshots';
+import { ResponsiveLayoutContext } from '../../lib/hooks/useResponsiveLayout/useResponsiveLayout';
 
 const mockNavigateToCallRoom = jest.mocked(navigateToCallRoom);
 
@@ -83,6 +84,21 @@ const setStoreState = (overrides: Partial<ReturnType<typeof useCallStore.getStat
 };
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => <Provider store={mockedStore}>{children}</Provider>;
+
+const LandscapeWrapper = ({ children }: { children: React.ReactNode }) => (
+	<ResponsiveLayoutContext.Provider
+		value={{
+			fontScale: 1,
+			width: 800,
+			height: 400,
+			isLargeFontScale: false,
+			fontScaleLimited: 1,
+			rowHeight: 75,
+			rowHeightCondensed: 60
+		}}>
+		<Provider store={mockedStore}>{children}</Provider>
+	</ResponsiveLayoutContext.Provider>
+);
 
 describe('CallView', () => {
 	beforeEach(() => {
@@ -392,6 +408,18 @@ describe('CallView', () => {
 		);
 
 		expect(getByText('Unmute')).toBeTruthy();
+	});
+
+	it('should apply landscape styles when width > height', () => {
+		setStoreState({ callState: 'active' });
+		const { getByTestId } = render(
+			<LandscapeWrapper>
+				<CallView />
+			</LandscapeWrapper>
+		);
+
+		const container = getByTestId('call-view-container');
+		expect(container.props.style).toEqual(expect.arrayContaining([expect.objectContaining({ flexDirection: 'row' })]));
 	});
 
 	it('should not call toggleControlsVisible when screen reader is enabled', () => {

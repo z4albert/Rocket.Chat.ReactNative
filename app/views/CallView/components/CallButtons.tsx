@@ -5,6 +5,7 @@ import Animated, { useAnimatedStyle, withTiming } from 'react-native-reanimated'
 import I18n from '../../../i18n';
 import { navigateToCallRoom } from '../../../lib/services/voip/navigateToCallRoom';
 import { useCallStore, useControlsVisible } from '../../../lib/services/voip/useCallStore';
+import { useResponsiveLayout } from '../../../lib/hooks/useResponsiveLayout/useResponsiveLayout';
 import CallActionButton from './CallActionButton';
 import { CONTROLS_ANIMATION_DURATION, styles } from '../styles';
 import { useTheme } from '../../../theme';
@@ -15,6 +16,8 @@ export const CallButtons = () => {
 	'use memo';
 
 	const { colors } = useTheme();
+	const { width, height } = useResponsiveLayout();
+	const isLandscape = width > height;
 
 	const callState = useCallStore(state => state.callState);
 	const isMuted = useCallStore(state => state.isMuted);
@@ -52,11 +55,16 @@ export const CallButtons = () => {
 
 	return (
 		<Animated.View
-			style={[styles.buttonsContainer, { borderTopColor: colors.strokeExtraLight }, containerStyle]}
+			style={[
+				styles.buttonsContainer,
+				isLandscape && styles.buttonsContainerLandscape,
+				{ borderTopColor: colors.strokeExtraLight },
+				containerStyle
+			]}
 			pointerEvents={controlsVisible ? 'auto' : 'none'}
 			accessibilityElementsHidden={!controlsVisible}
 			testID='call-buttons'>
-			<View style={styles.buttonsRow}>
+			<View style={[styles.buttonsRow, isLandscape && styles.buttonsRowLandscape]}>
 				<CallActionButton
 					icon={isSpeakerOn ? 'audio' : 'audio-disabled'}
 					label={I18n.t('Speaker')}
@@ -83,7 +91,7 @@ export const CallButtons = () => {
 				/>
 			</View>
 
-			<View style={styles.buttonsRow}>
+			<View style={[styles.buttonsRow, isLandscape && styles.buttonsRowLandscape]}>
 				<CallActionButton
 					icon='message'
 					label={I18n.t('Message')}

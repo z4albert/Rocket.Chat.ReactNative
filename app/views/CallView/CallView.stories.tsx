@@ -113,3 +113,22 @@ export const SpeakerOn = () => {
 	setStoreState({ callState: 'active', isSpeakerOn: true });
 	return <CallView />;
 };
+
+const landscapeResponsiveLayoutValue = {
+	fontScale: 1,
+	fontScaleLimited: 1,
+	isLargeFontScale: false,
+	rowHeight: 75,
+	rowHeightCondensed: 60,
+	width: 800,
+	height: 400
+};
+
+export const LandscapeConnectedCall = () => {
+	setStoreState({ callState: 'active', callStartTime: mockCallStartTime - 61000 });
+	return (
+		<ResponsiveLayoutContext.Provider value={landscapeResponsiveLayoutValue}>
+			<CallView />
+		</ResponsiveLayoutContext.Provider>
+	);
+};
