@@ -58,7 +58,7 @@ export const CallButtons = () => {
 			style={[
 				styles.buttonsContainer,
 				isLandscape && styles.buttonsContainerLandscape,
-				{ borderTopColor: colors.strokeExtraLight },
+				{ borderTopColor: colors.strokeExtraLight, borderLeftColor: colors.strokeExtraLight },
 				containerStyle
 			]}
 			pointerEvents={controlsVisible ? 'auto' : 'none'}
