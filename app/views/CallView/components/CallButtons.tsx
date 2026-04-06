@@ -54,6 +54,7 @@ export const CallButtons = () => {
 		<Animated.View
 			style={[styles.buttonsContainer, { borderTopColor: colors.strokeExtraLight }, containerStyle]}
 			pointerEvents={controlsVisible ? 'auto' : 'none'}
+			accessibilityElementsHidden={!controlsVisible}
 			testID='call-buttons'>
 			<View style={styles.buttonsRow}>
 				<CallActionButton
