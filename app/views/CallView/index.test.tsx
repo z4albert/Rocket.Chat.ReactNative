@@ -1,6 +1,5 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react-native';
-import { AccessibilityInfo } from 'react-native';
+import { fireEvent, render } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
 
 import CallView from '.';
@@ -21,19 +20,25 @@ jest.mock('../../lib/services/voip/navigateToCallRoom', () => ({
 jest.mock('../../lib/hooks/useResponsiveLayout/useResponsiveLayout', () => {
 	const React = require('react');
 	const actual = jest.requireActual('../../lib/hooks/useResponsiveLayout/useResponsiveLayout');
+	const MockedContext = React.createContext({
+		fontScale: 1,
+		width: 350,
+		height: 800,
+		isLargeFontScale: false,
+		fontScaleLimited: 1,
+		rowHeight: 75,
+		rowHeightCondensed: 60
+	});
 	return {
 		...actual,
-		ResponsiveLayoutContext: React.createContext({
-			fontScale: 1,
-			width: 350,
-			height: 800,
-			isLargeFontScale: false,
-			fontScaleLimited: 1,
-			rowHeight: 75,
-			rowHeightCondensed: 60
-		})
+		ResponsiveLayoutContext: MockedContext,
+		useResponsiveLayout: () => React.useContext(MockedContext)
 	};
 });
+
+jest.mock('../../lib/hooks/useIsScreenReaderEnabled', () => ({
+	useIsScreenReaderEnabled: jest.fn().mockReturnValue(false)
+}));
 
 const mockShowActionSheetRef = jest.fn();
 jest.mock('../../containers/ActionSheet', () => ({
@@ -423,12 +428,8 @@ describe('CallView', () => {
 	});
 
 	it('should not call toggleControlsVisible when screen reader is enabled', () => {
-		jest.spyOn(AccessibilityInfo, 'isScreenReaderEnabled').mockResolvedValue(false);
-		let capturedListener: (enabled: boolean) => void = () => {};
-		jest.spyOn(AccessibilityInfo, 'addEventListener').mockImplementation((_event: string, cb: any) => {
-			capturedListener = cb;
-			return { remove: jest.fn() } as any;
-		});
+		const { useIsScreenReaderEnabled } = jest.requireMock('../../lib/hooks/useIsScreenReaderEnabled');
+		useIsScreenReaderEnabled.mockReturnValue(true);
 
 		setStoreState({ callState: 'active' });
 		const toggleControlsVisible = jest.fn();
@@ -439,10 +440,6 @@ describe('CallView', () => {
 				<CallView />
 			</Wrapper>
 		);
-
-		act(() => {
-			capturedListener(true);
-		});
 
 		fireEvent.press(getByTestId('caller-info-toggle'));
 		expect(toggleControlsVisible).not.toHaveBeenCalled();

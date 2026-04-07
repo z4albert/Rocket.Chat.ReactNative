@@ -15,13 +15,17 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
           "flex": 1,
           "justifyContent": "space-between",
         },
+        false,
         {
           "backgroundColor": "#FFFFFF",
         },
       ]
     }
+    testID="call-view-container"
   >
     <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
       accessibilityState={
         {
           "busy": undefined,
@@ -52,12 +56,15 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
       }
       testID="caller-info-toggle"
     >
@@ -168,6 +175,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
       </View>
     </View>
     <View
+      accessibilityElementsHidden={false}
       pointerEvents="auto"
       style={
         [
@@ -175,7 +183,9 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
             "borderTopWidth": 0.5,
             "padding": 24,
           },
+          false,
           {
+            "borderLeftColor": "#EBECEF",
             "borderTopColor": "#EBECEF",
           },
           {
@@ -192,11 +202,14 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
     >
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -257,11 +270,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -355,11 +368,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -453,11 +466,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -496,11 +509,14 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
       </View>
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -563,11 +579,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -661,11 +677,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#FFFFFF",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -759,11 +775,11 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -820,13 +836,17 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
           "flex": 1,
           "justifyContent": "space-between",
         },
+        false,
         {
           "backgroundColor": "#FFFFFF",
         },
       ]
     }
+    testID="call-view-container"
   >
     <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
       accessibilityState={
         {
           "busy": undefined,
@@ -857,12 +877,15 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
       }
       testID="caller-info-toggle"
     >
@@ -973,6 +996,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
       </View>
     </View>
     <View
+      accessibilityElementsHidden={false}
       pointerEvents="auto"
       style={
         [
@@ -980,7 +1004,9 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             "borderTopWidth": 0.5,
             "padding": 24,
           },
+          false,
           {
+            "borderLeftColor": "#EBECEF",
             "borderTopColor": "#EBECEF",
           },
           {
@@ -997,11 +1023,14 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
     >
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -1064,11 +1093,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1164,11 +1193,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1264,11 +1293,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1307,11 +1336,14 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
       </View>
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -1374,11 +1406,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1472,11 +1504,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#FFFFFF",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1572,11 +1604,11 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -1618,7 +1650,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
 </View>
 `;
 
-exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
+exports[`Story Snapshots: LandscapeConnectedCall should match snapshot 1`] = `
 <View
   style={
     {
@@ -1634,12 +1666,19 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+        },
+        {
           "backgroundColor": "#FFFFFF",
         },
       ]
     }
+    testID="call-view-container"
   >
     <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
       accessibilityState={
         {
           "busy": undefined,
@@ -1670,12 +1709,17 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          {
+            "flex": 2,
+          },
+        ]
       }
       testID="caller-info-toggle"
     >
@@ -1694,8 +1738,8 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             [
               {
                 "borderRadius": 2,
-                "height": 120,
-                "width": 120,
+                "height": 80,
+                "width": 80,
               },
               undefined,
             ]
@@ -1712,7 +1756,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 "top": "50%",
               }
             }
-            height={120}
+            height={80}
             nativeViewRef={"[React.ref]"}
             onError={[Function]}
             onLoad={[Function]}
@@ -1726,19 +1770,19 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "headers": {
                     "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                   },
-                  "uri": "https://open.rocket.chat/avatar/bob.burnquist?format=png&size=240",
+                  "uri": "https://open.rocket.chat/avatar/bob.burnquist?format=png&size=160",
                 },
               ]
             }
             style={
               {
                 "borderRadius": 2,
-                "height": 120,
-                "width": 120,
+                "height": 80,
+                "width": 80,
               }
             }
             transition={null}
-            width={120}
+            width={80}
           />
         </View>
       </View>
@@ -1786,6 +1830,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
       </View>
     </View>
     <View
+      accessibilityElementsHidden={false}
       pointerEvents="auto"
       style={
         [
@@ -1794,6 +1839,13 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             "padding": 24,
           },
           {
+            "borderLeftWidth": 0.5,
+            "borderTopWidth": 0,
+            "flex": 3,
+            "justifyContent": "center",
+          },
+          {
+            "borderLeftColor": "#EBECEF",
             "borderTopColor": "#EBECEF",
           },
           {
@@ -1810,11 +1862,16 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
     >
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            {
+              "marginBottom": 16,
+            },
+          ]
         }
       >
         <View>
@@ -1875,816 +1932,11 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            Speaker
-          </Text>
-        </View>
-        <View>
-          <View
-            accessibilityLabel="Unhold"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                false,
-                {
-                  "backgroundColor": "#E4E7EA",
-                },
-              ]
-            }
-            testID="call-view-hold"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#BB0B21",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            Unhold
-          </Text>
-        </View>
-        <View>
-          <View
-            accessibilityLabel="Unmute"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                false,
-                {
-                  "backgroundColor": "#E4E7EA",
-                },
-              ]
-            }
-            testID="call-view-mute"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#BB0B21",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            Unmute
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
-        }
-      >
-        <View>
-          <View
-            accessibilityLabel="Message"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": true,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                {
-                  "opacity": 0.5,
-                },
-                {
-                  "backgroundColor": "#E4E7EA",
-                },
-              ]
-            }
-            testID="call-view-message"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#1F2329",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            Message
-          </Text>
-        </View>
-        <View>
-          <View
-            accessibilityLabel="End"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                false,
-                {
-                  "backgroundColor": "#EC0D2A",
-                },
-              ]
-            }
-            testID="call-view-end"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            End
-          </Text>
-        </View>
-        <View>
-          <View
-            accessibilityLabel="Dialpad"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                false,
-                {
-                  "backgroundColor": "#E4E7EA",
-                },
-              ]
-            }
-            testID="call-view-dialpad"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#1F2329",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
-                    },
-                    undefined,
-                  ],
-                  {
-                    "fontFamily": "custom",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  {},
-                ]
-              }
-            >
-              
-            </Text>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "backgroundColor": "transparent",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                  "textAlign": "center",
-                },
-                {
-                  "color": "#2F343D",
-                },
-              ]
-            }
-          >
-            Dialpad
-          </Text>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
-<View
-  style={
-    {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      [
-        {
-          "flex": 1,
-          "justifyContent": "space-between",
-        },
-        {
-          "backgroundColor": "#FFFFFF",
-        },
-      ]
-    }
-  >
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
-      }
-      testID="caller-info-toggle"
-    >
-      <View
-        style={
-          {
-            "marginBottom": 16,
-            "position": "relative",
-          }
-        }
-      >
-        <View
-          accessibilityLabel="bob.burnquist's avatar"
-          accessible={true}
-          style={
-            [
-              {
-                "borderRadius": 2,
-                "height": 120,
-                "width": 120,
-              },
-              undefined,
-            ]
-          }
-          testID="avatar"
-        >
-          <ViewManagerAdapter_ExpoImage
-            borderRadius={2}
-            containerViewRef={"[React.ref]"}
-            contentFit="cover"
-            contentPosition={
-              {
-                "left": "50%",
-                "top": "50%",
-              }
-            }
-            height={120}
-            nativeViewRef={"[React.ref]"}
-            onError={[Function]}
-            onLoad={[Function]}
-            onLoadStart={[Function]}
-            onProgress={[Function]}
-            placeholder={[]}
-            priority="high"
-            source={
-              [
-                {
-                  "headers": {
-                    "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
-                  },
-                  "uri": "https://open.rocket.chat/avatar/bob.burnquist?format=png&size=240",
-                },
-              ]
-            }
-            style={
-              {
-                "borderRadius": 2,
-                "height": 120,
-                "width": 120,
-              }
-            }
-            transition={null}
-            width={120}
-          />
-        </View>
-      </View>
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "justifyContent": "center",
-            },
-            {
-              "opacity": 1,
-              "transform": [
-                {
-                  "translateY": 0,
-                },
-              ],
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            [
-              {
-                "backgroundColor": "transparent",
-                "fontFamily": "Inter",
-                "fontSize": 24,
-                "fontWeight": "700",
-                "lineHeight": 32,
-                "marginBottom": 4,
-                "textAlign": "center",
-              },
-              {
-                "color": "#2F343D",
-              },
-            ]
-          }
-          testID="caller-info-name"
-        >
-          Bob Burnquist
-        </Text>
-      </View>
-    </View>
-    <View
-      pointerEvents="auto"
-      style={
-        [
-          {
-            "borderTopWidth": 0.5,
-            "padding": 24,
-          },
-          {
-            "borderTopColor": "#EBECEF",
-          },
-          {
-            "opacity": 1,
-            "transform": [
-              {
-                "translateY": 0,
-              },
-            ],
-          },
-        ]
-      }
-      testID="call-buttons"
-    >
-      <View
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
-        }
-      >
-        <View>
-          <View
-            accessibilityLabel="Speaker"
-            accessibilityRole="button"
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": false,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "borderRadius": 8,
-                  "height": 64,
-                  "justifyContent": "center",
-                  "marginBottom": 8,
-                  "width": 64,
-                },
-                false,
-                {
-                  "backgroundColor": "#E4E7EA",
-                },
-              ]
-            }
-            testID="call-view-speaker"
-          >
-            <Text
-              allowFontScaling={false}
-              selectable={false}
-              style={
-                [
-                  {
-                    "color": "#1F2329",
-                    "fontSize": NaN,
-                  },
-                  [
-                    {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -2778,11 +2030,11 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -2820,7 +2072,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
         </View>
         <View>
           <View
-            accessibilityLabel="Unmute"
+            accessibilityLabel="Mute"
             accessibilityRole="button"
             accessibilityState={
               {
@@ -2875,12 +2127,12 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
-                    "fontSize": NaN,
+                    "color": "#1F2329",
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -2893,7 +2145,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 ]
               }
             >
-              
+              
             </Text>
           </View>
           <Text
@@ -2913,17 +2165,22 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               ]
             }
           >
-            Unmute
+            Mute
           </Text>
         </View>
       </View>
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            {
+              "marginBottom": 16,
+            },
+          ]
         }
       >
         <View>
@@ -2986,11 +2243,11 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3084,11 +2341,11 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#FFFFFF",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3182,11 +2439,11 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3228,7 +2485,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
 </View>
 `;
 
-exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
+exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
 <View
   style={
     {
@@ -3243,13 +2500,17 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
           "flex": 1,
           "justifyContent": "space-between",
         },
+        false,
         {
           "backgroundColor": "#FFFFFF",
         },
       ]
     }
+    testID="call-view-container"
   >
     <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
       accessibilityState={
         {
           "busy": undefined,
@@ -3280,12 +2541,15 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
       }
       testID="caller-info-toggle"
     >
@@ -3396,6 +2660,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
       </View>
     </View>
     <View
+      accessibilityElementsHidden={false}
       pointerEvents="auto"
       style={
         [
@@ -3403,7 +2668,9 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
             "borderTopWidth": 0.5,
             "padding": 24,
           },
+          false,
           {
+            "borderLeftColor": "#EBECEF",
             "borderTopColor": "#EBECEF",
           },
           {
@@ -3420,11 +2687,14 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
     >
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -3485,11 +2755,11 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3583,11 +2853,11 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#BB0B21",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3625,7 +2895,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
         </View>
         <View>
           <View
-            accessibilityLabel="Mute"
+            accessibilityLabel="Unmute"
             accessibilityRole="button"
             accessibilityState={
               {
@@ -3680,12 +2950,12 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
-                    "fontSize": NaN,
+                    "color": "#BB0B21",
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3698,7 +2968,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 ]
               }
             >
-              
+              
             </Text>
           </View>
           <Text
@@ -3718,17 +2988,20 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               ]
             }
           >
-            Mute
+            Unmute
           </Text>
         </View>
       </View>
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -3791,11 +3064,11 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3889,11 +3162,11 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#FFFFFF",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -3987,11 +3260,11 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4033,7 +3306,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
 </View>
 `;
 
-exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
+exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
 <View
   style={
     {
@@ -4048,13 +3321,17 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
           "flex": 1,
           "justifyContent": "space-between",
         },
+        false,
         {
           "backgroundColor": "#FFFFFF",
         },
       ]
     }
+    testID="call-view-container"
   >
     <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
       accessibilityState={
         {
           "busy": undefined,
@@ -4085,12 +3362,15 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-          "paddingHorizontal": 24,
-        }
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
       }
       testID="caller-info-toggle"
     >
@@ -4201,6 +3481,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
       </View>
     </View>
     <View
+      accessibilityElementsHidden={false}
       pointerEvents="auto"
       style={
         [
@@ -4208,7 +3489,9 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
             "borderTopWidth": 0.5,
             "padding": 24,
           },
+          false,
           {
+            "borderLeftColor": "#EBECEF",
             "borderTopColor": "#EBECEF",
           },
           {
@@ -4225,11 +3508,1656 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
     >
       <View
         style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
+        }
+      >
+        <View>
+          <View
+            accessibilityLabel="Speaker"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-speaker"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Speaker
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Hold"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-hold"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Hold
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Unmute"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-mute"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#BB0B21",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Unmute
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
+        }
+      >
+        <View>
+          <View
+            accessibilityLabel="Message"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                {
+                  "opacity": 0.5,
+                },
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-message"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Message
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="End"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#EC0D2A",
+                },
+              ]
+            }
+            testID="call-view-end"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            End
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Dialpad"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-dialpad"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Dialpad
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+    testID="call-view-container"
+  >
+    <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
           {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
+      }
+      testID="caller-info-toggle"
+    >
+      <View
+        style={
+          {
+            "marginBottom": 16,
+            "position": "relative",
           }
+        }
+      >
+        <View
+          accessibilityLabel="bob.burnquist's avatar"
+          accessible={true}
+          style={
+            [
+              {
+                "borderRadius": 2,
+                "height": 120,
+                "width": 120,
+              },
+              undefined,
+            ]
+          }
+          testID="avatar"
+        >
+          <ViewManagerAdapter_ExpoImage
+            borderRadius={2}
+            containerViewRef={"[React.ref]"}
+            contentFit="cover"
+            contentPosition={
+              {
+                "left": "50%",
+                "top": "50%",
+              }
+            }
+            height={120}
+            nativeViewRef={"[React.ref]"}
+            onError={[Function]}
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            onProgress={[Function]}
+            placeholder={[]}
+            priority="high"
+            source={
+              [
+                {
+                  "headers": {
+                    "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
+                  },
+                  "uri": "https://open.rocket.chat/avatar/bob.burnquist?format=png&size=240",
+                },
+              ]
+            }
+            style={
+              {
+                "borderRadius": 2,
+                "height": 120,
+                "width": 120,
+              }
+            }
+            transition={null}
+            width={120}
+          />
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            {
+              "opacity": 1,
+              "transform": [
+                {
+                  "translateY": 0,
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": "700",
+                "lineHeight": 32,
+                "marginBottom": 4,
+                "textAlign": "center",
+              },
+              {
+                "color": "#2F343D",
+              },
+            ]
+          }
+          testID="caller-info-name"
+        >
+          Bob Burnquist
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityElementsHidden={false}
+      pointerEvents="auto"
+      style={
+        [
+          {
+            "borderTopWidth": 0.5,
+            "padding": 24,
+          },
+          false,
+          {
+            "borderLeftColor": "#EBECEF",
+            "borderTopColor": "#EBECEF",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        ]
+      }
+      testID="call-buttons"
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
+        }
+      >
+        <View>
+          <View
+            accessibilityLabel="Speaker"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-speaker"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Speaker
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Unhold"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-hold"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#BB0B21",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Unhold
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Mute"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-mute"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Mute
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
+        }
+      >
+        <View>
+          <View
+            accessibilityLabel="Message"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                {
+                  "opacity": 0.5,
+                },
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-message"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Message
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="End"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#EC0D2A",
+                },
+              ]
+            }
+            testID="call-view-end"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            End
+          </Text>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="Dialpad"
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "height": 64,
+                  "justifyContent": "center",
+                  "marginBottom": 8,
+                  "width": 64,
+                },
+                false,
+                {
+                  "backgroundColor": "#E4E7EA",
+                },
+              ]
+            }
+            testID="call-view-dialpad"
+          >
+            <Text
+              allowFontScaling={false}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#1F2329",
+                    "fontSize": 32,
+                  },
+                  [
+                    {
+                      "lineHeight": 32,
+                    },
+                    undefined,
+                  ],
+                  {
+                    "fontFamily": "custom",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "textAlign": "center",
+                },
+                {
+                  "color": "#2F343D",
+                },
+              ]
+            }
+          >
+            Dialpad
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+    testID="call-view-container"
+  >
+    <View
+      accessibilityLabel="Toggle call controls"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          },
+          false,
+        ]
+      }
+      testID="caller-info-toggle"
+    >
+      <View
+        style={
+          {
+            "marginBottom": 16,
+            "position": "relative",
+          }
+        }
+      >
+        <View
+          accessibilityLabel="bob.burnquist's avatar"
+          accessible={true}
+          style={
+            [
+              {
+                "borderRadius": 2,
+                "height": 120,
+                "width": 120,
+              },
+              undefined,
+            ]
+          }
+          testID="avatar"
+        >
+          <ViewManagerAdapter_ExpoImage
+            borderRadius={2}
+            containerViewRef={"[React.ref]"}
+            contentFit="cover"
+            contentPosition={
+              {
+                "left": "50%",
+                "top": "50%",
+              }
+            }
+            height={120}
+            nativeViewRef={"[React.ref]"}
+            onError={[Function]}
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            onProgress={[Function]}
+            placeholder={[]}
+            priority="high"
+            source={
+              [
+                {
+                  "headers": {
+                    "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
+                  },
+                  "uri": "https://open.rocket.chat/avatar/bob.burnquist?format=png&size=240",
+                },
+              ]
+            }
+            style={
+              {
+                "borderRadius": 2,
+                "height": 120,
+                "width": 120,
+              }
+            }
+            transition={null}
+            width={120}
+          />
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            {
+              "opacity": 1,
+              "transform": [
+                {
+                  "translateY": 0,
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": "700",
+                "lineHeight": 32,
+                "marginBottom": 4,
+                "textAlign": "center",
+              },
+              {
+                "color": "#2F343D",
+              },
+            ]
+          }
+          testID="caller-info-name"
+        >
+          Bob Burnquist
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityElementsHidden={false}
+      pointerEvents="auto"
+      style={
+        [
+          {
+            "borderTopWidth": 0.5,
+            "padding": 24,
+          },
+          false,
+          {
+            "borderLeftColor": "#EBECEF",
+            "borderTopColor": "#EBECEF",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateY": 0,
+              },
+            ],
+          },
+        ]
+      }
+      testID="call-buttons"
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -4290,11 +5218,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#BB0B21",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4388,11 +5316,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4486,11 +5414,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4529,11 +5457,14 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
       </View>
       <View
         style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-around",
-            "marginBottom": 24,
-          }
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-around",
+              "marginBottom": 24,
+            },
+            false,
+          ]
         }
       >
         <View>
@@ -4596,11 +5527,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4694,11 +5625,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#FFFFFF",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],
@@ -4792,11 +5723,11 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 [
                   {
                     "color": "#1F2329",
-                    "fontSize": NaN,
+                    "fontSize": 32,
                   },
                   [
                     {
-                      "lineHeight": NaN,
+                      "lineHeight": 32,
                     },
                     undefined,
                   ],

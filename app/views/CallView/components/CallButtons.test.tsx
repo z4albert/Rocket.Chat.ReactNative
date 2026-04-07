@@ -48,7 +48,7 @@ describe('CallButtons', () => {
 			</Wrapper>
 		);
 
-		const container = getByTestId('call-buttons');
+		const container = getByTestId('call-buttons', { includeHiddenElements: true });
 		expect(container.props.pointerEvents).toBe('none');
 	});
 
