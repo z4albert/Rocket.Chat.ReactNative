@@ -7,7 +7,7 @@ import { useTheme } from '../../theme';
 import { useResponsiveLayout } from '../../lib/hooks/useResponsiveLayout/useResponsiveLayout';
 import icoMoonConfig from './selection.json';
 
-export const IconSet = createIconSetFromIcoMoon(icoMoonConfig, 'custom', 'custom.ttf');
+export const IconSet = createIconSetFromIcoMoon(icoMoonConfig, 'custom', require('../../static/fonts/custom.ttf'));
 
 const glyphMap = IconSet.getRawGlyphMap
 	? IconSet.getRawGlyphMap()
