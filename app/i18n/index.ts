@@ -179,8 +179,8 @@ export const setLanguage = (l: string) => {
 	dayjs.locale(toDayJsLocale(locale));
 };
 
-i18n.translations = { en: translations.en?.() };
-const defaultLanguage = { languageTag: 'en', isRTL: false };
+i18n.translations = { 'zh-CN': translations['zh-CN']?.(), en: translations.en?.() };
+const defaultLanguage = { languageTag: 'zh-CN', isRTL: false };
 const availableLanguages = Object.keys(translations);
 const { languageTag } = RNLocalize.findBestAvailableLanguage(availableLanguages) || defaultLanguage;
 

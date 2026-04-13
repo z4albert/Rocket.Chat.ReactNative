@@ -24,6 +24,7 @@ import useConnectServer from './hooks/useConnectServer';
 import { type INewServerViewProps } from './definitions';
 import completeUrl from './utils/completeUrl';
 import styles from './styles';
+import { DEFAULT_SERVER_URL } from '../../lib/constants/environment';
 
 const NewServerView = ({ navigation }: INewServerViewProps) => {
 	const dispatch = useDispatch();
@@ -41,13 +42,19 @@ const NewServerView = ({ navigation }: INewServerViewProps) => {
 		setValue,
 		setError,
 		clearErrors
-	} = useForm({ mode: 'onChange', defaultValues: { workspaceUrl: '' } });
+	} = useForm({ mode: 'onChange', defaultValues: { workspaceUrl: DEFAULT_SERVER_URL || '' } });
 
 	const workspaceUrl = watch('workspaceUrl');
 	const [showBottomInfo, setShowBottomInfo] = useState<boolean>(true);
 	const { deleteServerHistory, queryServerHistory, serversHistory } = useServersHistory();
 	const { certificate, chooseCertificate, removeCertificate, autocompleteCertificate } = useCertificate();
 	const { submit } = useConnectServer({ workspaceUrl, certificate, previousServer });
+
+	useEffect(() => {
+		if (DEFAULT_SERVER_URL && !previousServer && !connecting) {
+			submit();
+		}
+	}, []);
 	const phoneMarginTop = previousServer ? 32 : 84;
 	const marginTop = isTablet ? 0 : phoneMarginTop;
 	const formContainerStyle = previousServer ? { paddingBottom: 100 } : {};

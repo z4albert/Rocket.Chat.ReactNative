@@ -44,10 +44,6 @@ const RoomsListHeaderView = ({ search, searchEnabled }: { search: (text: string)
 	const { colors } = useTheme();
 	const { fontScale } = useWindowDimensions();
 
-	const onPress = () => {
-		showActionSheetRef({ children: <ServersList />, enableContentPanningGesture: false });
-	};
-
 	if (searchEnabled) {
 		// This value is necessary to keep the alignment in MasterDetail.
 		const height = 37 * fontScale;
@@ -67,21 +63,19 @@ const RoomsListHeaderView = ({ search, searchEnabled }: { search: (text: string)
 	}
 	return (
 		<View style={styles.container} accessibilityLabel={`${serverName} ${subtitle}`} accessibilityRole='header' accessible>
-			<TouchableOpacity onPress={onPress} testID='rooms-list-header-servers-list-button'>
-				<View style={styles.button}>
-					<Text style={[styles.title, { color: colors.fontTitlesLabels }]} numberOfLines={1}>
-						{serverName}
-					</Text>
-				</View>
-				{subtitle ? (
-					<Text
-						testID='rooms-list-header-server-subtitle'
-						style={[styles.subtitle, { color: colors.fontSecondaryInfo }]}
-						numberOfLines={1}>
-						{subtitle}
-					</Text>
-				) : null}
-			</TouchableOpacity>
+			<View style={styles.button}>
+				<Text style={[styles.title, { color: colors.fontTitlesLabels }]} numberOfLines={1}>
+					{serverName}
+				</Text>
+			</View>
+			{subtitle ? (
+				<Text
+					testID='rooms-list-header-server-subtitle'
+					style={[styles.subtitle, { color: colors.fontSecondaryInfo }]}
+					numberOfLines={1}>
+					{subtitle}
+				</Text>
+			) : null}
 		</View>
 	);
 };

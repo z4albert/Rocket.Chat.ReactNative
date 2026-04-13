@@ -15,6 +15,7 @@ import { RootEnum } from '../definitions';
 import { getSortPreferences } from '../lib/methods/userPreferencesMethods';
 import { deepLinkingClickCallPush } from '../actions/deepLinking';
 import { getServerById } from '../lib/database/services/Server';
+import { DEFAULT_SERVER_URL } from '../lib/constants/environment';
 
 export const initLocalSettings = function* initLocalSettings() {
 	const sortPreferences = getSortPreferences();
@@ -23,7 +24,13 @@ export const initLocalSettings = function* initLocalSettings() {
 
 const restore = function* restore() {
 	try {
-		const server = UserPreferences.getString(CURRENT_SERVER);
+		let server = UserPreferences.getString(CURRENT_SERVER);
+
+		if (!server && DEFAULT_SERVER_URL) {
+			server = DEFAULT_SERVER_URL;
+			UserPreferences.setString(CURRENT_SERVER, server);
+		}
+
 		let userId = UserPreferences.getString(`${TOKEN_KEY}-${server}`);
 
 		if (!server) {

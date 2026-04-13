@@ -30,7 +30,6 @@ const SidebarView = ({ navigation }: { navigation: DrawerNavigationProp<DrawerPa
 	return (
 		<SafeAreaView testID='sidebar-view' vertical={isMasterDetail}>
 			<ScrollView style={styles.container} {...scrollPersistTaps}>
-				<Profile navigation={navigation} />
 				<SupportedVersionsWarnItem />
 				<CustomStatus />
 				<Stacks currentScreen={currentScreen} />
